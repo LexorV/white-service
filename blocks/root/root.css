@@ -13,6 +13,24 @@ ul {
     max-width: 1920px;
      
 }
+.mt-80 {
+margin-top: 80px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+.mb-120 {
+    margin-bottom: 120px;
+}
 .specialists,
 .header__logo-box,
 .address,

@@ -1,0 +1,109 @@
+.main {
+    position: relative;
+    background-color: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    padding: 0 200px;
+    display: flex;
+    gap: 90px;
+}
+
+.main__left-block {
+    width: 50%;
+}
+
+.main__heading {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.main__text {
+    font-size: 26px;
+    width: 673px;
+}
+
+.btn-diagnostics {
+    width: 342px;
+    height: 69px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 60px;
+    display: flex;
+    cursor: pointer;
+    gap: 15px;
+    position: relative;
+    box-shadow: 0px 8px 15px -5px #0000001A;
+    background: linear-gradient(to left, #FFCC00, #FFA300);
+}
+
+.btn-diagnostics__text {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+
+.btn-diagnostics__triangle {
+    position: absolute;
+    top: -7px;
+    left: 100px;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0px 8px 15px -5px #0000001A;
+    background: linear-gradient(#FFCC00, #FFA300);
+    border-top-left-radius: 3px;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    transform: rotate(45deg);
+}
+
+.advantages {
+    display: flex;
+    width: 815px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 317px;
+}
+
+.advantages__item-text {
+    font-size: 18px;
+}
+
+.main__right-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-size: cover;
+    background-image: url('../../images/main/technique.jpg');
+}
+
+.achievements {
+    height: 100px;
+    position: absolute;
+    bottom: 200px;
+    display: flex;
+    background-color: white;
+    width: 464px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    box-shadow: rgba(35, 25, 4, 0.15);
+}
+.achievements__count {
+    font-weight: 700;
+    font-size: 50px;
+    background: linear-gradient(270deg, #FFCC00 0%, #FFA300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.achievements__text {
+    font-size: 20px;
+    width: 151px;
+}
