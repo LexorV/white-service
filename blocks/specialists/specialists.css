@@ -9,7 +9,6 @@
     font-size: 48px;
     font-weight: 700;
     text-align: center;
-    margin: 0;
 }
 .specialists__text {
     font-size: 26px;
@@ -90,5 +89,22 @@
 }
 .specialists__slider-button_right {
     right: -65px;
+}
+.specialists__pagination {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.specialists__pagination-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    background-color: black;
+    cursor: pointer;
+}
+.specialists__pagination-dot_active {
+    background-color:white;
+    border: 3px solid black;
+    border-radius: 3px;
 
 }

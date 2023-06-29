@@ -23,7 +23,8 @@
                             <a class="info-menu__link" href="#">
                                 Отзывы</a>
                         </li>
-                        <li class="info-menu__item"><a class="info-menu__link" href="#">Гарантия</a>
+                        <li class="info-menu__item">
+                            <a class="info-menu__link" href="#">Гарантия</a>
                         </li>
                     </ul>
                 </nav>
@@ -56,14 +57,19 @@
                 <li class="menu__link-box"><a class="menu__link" href="#"> <img alt="Каталог"
                             src="./images/menu/icons/smartphone.svg">Ремонт планшетов</a>
                     <img src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
-            </ul>
+                    <div class="menu__delimiter"></div>
+                    <li class="menu__link-box"><a class="menu__link" href="#"> <img alt="Каталог"
+                        src="./images/menu/icons/laptop.svg">Ремонт ноутбуков</a>
+                <img src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                <div class="menu__delimiter"></div>
+                </ul>
         </nav>
     </header>
     <mian>
 
         <main class="main">
             <div class="main__left-block">
-                <h1 class="main__heading mt-80 ">Сервисный
+                <h1 class="main__heading">Сервисный
                     центр</h1>
                 <p class="main__text mb-60">Ремонт планшетов в Челябинске. Бесплатно продиагностируем
                     и быстро починим любую поломку. Гарантия 3 месяца</p>
@@ -110,7 +116,7 @@
                 </div>
             </div>
         </main>
-        <section class="specialists">
+        <section class="specialists mb-120">
             <h2 class="specialists__heading mb-40">
                 Ремонт осуществляется
                 первоклассными специалистами
@@ -120,8 +126,7 @@
                 <button class="specialists__slider-button 
                 specialists__slider-button_left 
                 ">
-                    <img alt="Листать влево" 
-                   src="./images/specialists/slider_icon_left.svg"></button>
+                    <img alt="Листать влево" src="./images/specialists/slider_icon_left.svg"></button>
                 <li class="specialists__item">
                     <img class="specialists__picture mb-40" alt="Наш специалист"
                         src="./images/specialists/specialists_1.jpg">
@@ -194,9 +199,53 @@
                 <button class="specialists__slider-button 
                 specialists__slider-button_right 
                 ">
-                    <img alt="Листать вправо" 
-                   src="./images/specialists/slider_icon_right.svg"></button>
+                    <img alt="Листать вправо" src="./images/specialists/slider_icon_right.svg"></button>
             </ul>
+            <ul class="specialists__pagination mt-80">
+
+                <li class="specialists__pagination-dot
+                specialists__pagination-dot_active">
+                </li>
+
+                <li class="specialists__pagination-dot">
+                </li>
+
+                <li class="specialists__pagination-dot">
+                </li>
+            </ul>
+        </section>
+        <section class="address">
+            <ul class="address__list">
+                <li class="address__item">
+                    <img class="address__picture" src="./images/address/photo_address_1.jpg" alt="Наш адрес">
+                </li>
+                <li class="address__item">
+                    <h2 class="address__heading">Сервисные центры</h2>
+                    <p class="address__text">Первый сервисный центр Белый
+                         Сервис распахнул свои двери 28 марта 2012 года по адресу г. 
+                        Челябинск, ул. Энгельса 75. </p>
+                    <p class="address__text mt-32">На текущий момент «Белый Сервис» имеет три филиала
+                        со своими приемщиками и мастерами.
+                        Гибко распределяем рабочую нагрузку:
+                        если персонал на одной из точек перегружен заказами,
+                        то часть работ передается их менее загруженным
+                        коллегам из другого филиала.
+                    </p>
+                    <button type="button" class="address__button">
+                        Показать адреса
+                    </button>
+                </li>
+                <li class="address__item">
+                    <img class="address__picture" src="./images/address/photo_address_2.jpg" alt="Наш адрес">
+                </li>
+
+                <li class="address__item">
+                    <img class="address__picture" src="./images/address/photo_address_3.jpg" alt="Наш адрес">
+                </li>
+            </ul>
+
+
+
         </section>
 </body>
 

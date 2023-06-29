@@ -1,18 +1,20 @@
 .main {
     position: relative;
     background-color: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
-    padding: 0 200px;
+    padding: 0 0 0 200px;
     display: flex;
     gap: 90px;
 }
 
 .main__left-block {
-    width: 50%;
+    width: 55%;
 }
 
 .main__heading {
     font-size: 80px;
     font-weight: 800;
+    margin-top: 120px;
+    margin-bottom: 60px;
 }
 
 .main__text {
@@ -21,7 +23,7 @@
 }
 
 .btn-diagnostics {
-    width: 342px;
+    min-width: 412px;
     height: 69px;
     align-items: center;
     justify-content: center;
@@ -78,7 +80,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 45%;
     background-size: cover;
     background-image: url('../../images/main/technique.jpg');
 }
