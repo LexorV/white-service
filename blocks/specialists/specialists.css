@@ -24,7 +24,9 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 328px;
+    padding: 0 14px;
+    box-sizing: border-box;
+    max-width: 328px;
 }
 .specialists__item-name {
     font-size: 26px;
@@ -45,7 +47,7 @@
     position: relative;
     font-size: 16px;
     background: #F6F6F6;
-    width: 296px;
+    max-width: 296px;
     padding: 16px;
     box-sizing: border-box;
    display: flex;
@@ -68,6 +70,9 @@
 .specialists__comment:before {
     z-index: 1;
     box-shadow: none; 
+   }
+   .specialists__slider-box {
+    position: relative;
    }
 .specialists__slider-button {
     cursor: pointer;

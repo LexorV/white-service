@@ -4,12 +4,13 @@
 }
 .address__list {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     gap: 32px;
 }
 .address__item {
-    width: 48.9%;
-    height: 470px;
+    width: calc(50% - 16px);
+    max-height: 537px;
 }
 .address__picture {
     width: 100%;

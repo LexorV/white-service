@@ -7,7 +7,7 @@
 }
 
 .main__left-block {
-    width: 55%;
+    width: 50%;
 }
 
 .main__heading {
@@ -19,7 +19,7 @@
 
 .main__text {
     font-size: 26px;
-    width: 673px;
+    min-width: 673px;
 }
 
 .btn-diagnostics {
@@ -60,7 +60,7 @@
 
 .advantages {
     display: flex;
-    width: 815px;
+    max-width: 815px;
     gap: 40px;
     flex-wrap: wrap;
 }
@@ -69,7 +69,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 317px;
+    max-width: 317px;
 }
 
 .advantages__item-text {
@@ -80,7 +80,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 45%;
+    width: 50%;
     background-size: cover;
     background-image: url('../../images/main/technique.jpg');
 }

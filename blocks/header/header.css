@@ -9,7 +9,7 @@
     
 }
 .header__logo { 
-    width: 315px;
+    max-width: 315px;
 }
 .header__left-block {
     display: flex;
