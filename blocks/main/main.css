@@ -1,6 +1,6 @@
 .main {
     position: relative;
-    background-color: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     padding: 0 0 0 200px;
     display: flex;
     gap: 90px;
@@ -19,7 +19,7 @@
 
 .main__text {
     font-size: 26px;
-    min-width: 673px;
+    max-width: 673px;
 }
 
 .btn-diagnostics {
@@ -71,6 +71,15 @@
     gap: 20px;
     max-width: 317px;
 }
+.advantages__item-box-picture {
+    min-width: 70px;
+    border-radius: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7.156807899475098px 21.47042465209961px -4.2940850257873535px #23190426;
+}
 
 .advantages__item-text {
     font-size: 18px;
@@ -108,4 +117,117 @@
 .achievements__text {
     font-size: 20px;
     width: 151px;
+}
+
+@media screen and (max-width: 1700px)  {
+    .main {
+        padding: 0 0 0 143px;
+    }
+}
+@media screen and (max-width: 1366px)  {
+    .main {
+        gap: 18px;
+    }
+    .main__text {
+        font-size: 20px;
+    }
+    .main__heading {
+        font-size: 70px;
+    }
+    .btn-diagnostics {
+        min-width: 342px;
+    }
+    .btn-diagnostics__text {
+        font-size: 16px;
+    }
+   
+    .main__left-block  {
+        width: 57%;
+    }
+    .main__right-block {
+        width: 43%;
+    }
+    .advantages  {
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 1324px)  {
+    .advantages__item-text {
+        font-size: 14px;
+    }
+    .main__text {
+        font-size: 16px;
+        max-width: 470px;
+    }
+    
+    .main__heading  {
+        font-size: 50px;
+        max-width: 331px;
+    }
+    .btn-diagnostics {
+        min-width: 290px;
+        max-height: 59px;
+    }
+    .advantages__item {
+        gap: 16px;
+        max-width: 263px;
+    }
+    .advantages__item-box-picture {
+        min-width: 50px;
+        height: 50px;
+    }
+    .achievements {
+        width: 298px;
+        gap: 6px;
+        height: 61px;
+    } 
+    .achievements__count { 
+        font-size: 28px;
+    }
+    .achievements__text  {
+        font-size: 14px;
+        width: 106px;
+    }
+    .achievements__smile {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .advantages {
+        gap: 30px;
+    }
+    .advantages__item-picture {
+        width: 36px;
+        height: 36px;
+    }
+    .advantages__item  {
+        max-width: 242px;
+        gap: 16px;
+    }
+    .main {
+        gap: 12px;
+        padding: 0 0 0 87px;
+    }
+    .main__heading {
+        font-size: 50px;
+    }
+    .btn-diagnostics__text {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1001px) {
+
+    .advantages__item  {
+        max-width: 267px;
+        gap: 24px;
+    }
+    .main__text {
+        max-width: 310px;
+    }
+    .main__left-block  {
+        width: 50%;
+    }
+    .main__right-block {
+        width: 50%;
+    }
+
 }

@@ -60,11 +60,14 @@
     width: 18px;
     height: 18px;
 }
-.contact___telehone-text {
-    font-size: 18px;
+.contact__telehone-text {
+    font-size: 26px;
     font-weight: 700;
     
 } 
+.contact__working-text {
+    font-size: 14px;
+}
 .header__line {
     margin: 0;
     width:100%;
@@ -82,7 +85,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
+   
+}
+.menu__link-text {
     font-size: 14px;
+}
+.menu__link-icone {
+    width: 25px;
+    height: 25px;
 }
 .menu__delimiter {
     height: 28px;
@@ -90,4 +100,34 @@
     background-color: #E5E5E5;
 }
 
+@media screen and (max-width: 1366px)  {
+    .info-menu {
+        display: none;
+       
+    }
+    .menu__delimiter:nth-child(n +3):nth-child(-n+10) {
+        display: none;
+    }
+    .menu__link-box {
+        font-size: 14px;;
+    }
+}
+@media screen and (max-width: 1140px)  {
+    .menu__link-box:nth-child(9) {
+        display: none;
+    }
+    .contact__telehone-text {
+        font-size: 18px;
 
+    }
+}
+@media screen and (max-width: 850px)  {
+    .menu__link-icone {
+        width: 20px;
+        height: 20px;
+    }
+    .menu__link_disable {
+        display: none;
+    }
+
+}
