@@ -231,3 +231,25 @@
     }
 
 }
+@media screen and (max-width: 720px) {
+    .main__heading  {
+        font-size: 26px;
+    }
+    .main__text {
+        font-size: 14px;
+    }
+    .btn-diagnostics {
+        width: 100%;
+        flex-grow:2;
+    }
+    .main__right-block {
+        height: 216px;
+        box-sizing: border-box;
+    }
+    .main {
+        flex-wrap: wrap-reverse;
+    }
+    
+    
+
+}

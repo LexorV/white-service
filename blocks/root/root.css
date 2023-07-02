@@ -69,6 +69,15 @@ margin-top: 80px;
         margin: 0 59px;
     }
 }
+@media screen and (max-width: 720px)  {
+    .specialists,
+    .header__logo-box,
+    .address,
+    .menu,
+    .header__mobile {
+        margin: 0 24px;
+    }
+}
 
 
 @media screen and (max-width: 1366px)  {

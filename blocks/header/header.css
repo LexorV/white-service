@@ -1,6 +1,9 @@
 .header {
     
 }
+.header__mobile {
+    display: none;
+}
 .header__logo-box {
     display: flex;
     justify-content: space-between;
@@ -129,5 +132,49 @@
     .menu__link_disable {
         display: none;
     }
-
 }
+@media screen and (max-width: 720px)  {
+    .header__mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .menu, 
+     .contact__working-box,
+     .header__line,
+     .contact__telehone-icone
+      {
+        display: none;
+    }
+   
+    .header__connect-button {
+        width: 106px;
+        height: 32px;
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 14px;
+        color: white;
+        background: linear-gradient(#FFCC00, #FFA300)
+    }
+    .header__burger-menu {
+        background-color: transparent;
+        border: none;
+        width: 34px;
+        height: 19px;
+        cursor: pointer;
+    }
+    
+}
+@media screen and (max-width: 600px)  {
+    .header__logo {
+        max-width: 168px;
+    }
+    .contact__telehone-text {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
