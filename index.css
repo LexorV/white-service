@@ -3,7 +3,7 @@
 
 @import url('./blocks/main/main.css');
 @import url('./blocks/header/header.css');
-@import url('./blocks/footer/footer.css');
 @import url('./blocks/main/main.css');
 @import url('./blocks/specialists/specialists.css');
 @import url('./blocks/address/adress.css');
+@import url('./blocks/color-blocks/color-blocks.css')
