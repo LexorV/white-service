@@ -47,9 +47,15 @@
             <button class="header__connect-button">Связаться</button>
         </div>
         <hr class="header__line">
-        <nav>
-            <ul class="menu">
-                <li class="menu__link-box"><a class="menu__link" href="#">
+        <nav class="menu">
+            <div class="menu__modal-header">
+                <h3 class="menu__modal-heading">Меню</h3>
+                <button type="button" class="menu__close-modal-button">
+                    <img src="./images/menu/icons/close.svg" class="menu__close-icon">
+                </button>
+            </div>
+            <ul class="menu-list">
+                <li  class="menu__link-box"><a class="menu__link" href="#">
                         <img class="menu__link-icone menu__link-icone_big-mobile" alt="Каталог"
                             src="./images/menu/icons/catalog.svg">
                         <span class="menu__link-text menu__link_disable">Главная</span></a></li>
@@ -60,7 +66,7 @@
                             Ремонт Apple
                         </span>
                     </a>
-                    <img src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                    <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
                 <li class="menu__delimiter"></li>
                 <li class="menu__link-box"><a class="menu__link" href="#"> <img class="menu__link-icone" alt="Каталог"
                             src="./images/menu/icons/smartphone.svg">
@@ -68,7 +74,7 @@
                             Ремонт смартфонов
                         </span>
                     </a>
-                    <img src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                    <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
                 <li class="menu__delimiter"></li>
                 <li class="menu__link-box"><a class="menu__link" href="#"> <img class="menu__link-icone" alt="Каталог"
                             src="./images/menu/icons/smartphone.svg">
@@ -76,7 +82,7 @@
                             Ремонт планшетов
                         </span>
                     </a>
-                    <img src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                    <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
                 <li class="menu__delimiter"></li>
                 <li class="menu__link-box"><a class="menu__link" href="#"> <img class="menu__link-icone" alt="Каталог"
                             src="./images/menu/icons/laptop.svg">
@@ -84,8 +90,17 @@
                             Ремонт ноутбуков
                         </span>
                     </a>
-                    <img src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                    <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
                 <li class="menu__delimiter"></li>
+
+                <li class="menu__link-box"><a class="menu__link" href="#"> <img class="menu__link-icone" alt="Каталог"
+                    src="./images/menu/icons/game.svg">
+                <span class="menu__link-text">
+                    Ремонт игровых приставок
+                </span>
+            </a>
+            <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+        <li class="menu__delimiter"></li>
             </ul>
         </nav>
     </header>

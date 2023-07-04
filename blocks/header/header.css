@@ -85,7 +85,8 @@
     border:none;
 }
 
-.menu {
+
+.menu-list {
     display: flex;
     padding: 20px 0;
     justify-content: space-between;
@@ -95,6 +96,12 @@
     align-items: center;
     gap: 10px;
    
+}
+.menu__link-box:nth-child(11) {
+    display: none;
+}
+.menu__delimiter:nth-child(12) {
+    display: none;
 }
 .menu__link-text {
     font-size: 14px;
@@ -107,6 +114,12 @@
     height: 28px;
     width: 1px;
     background-color: #E5E5E5;
+}
+.menu__modal-header{
+    display: none;
+}
+.menu_modal-active  {
+    display: none;;
 }
 
 @media screen and (max-width: 1366px)  {
@@ -144,7 +157,7 @@
     .menu__link_disable {
         display: none;
     }
-    .menu {
+    .menu-list {
         padding: 5px 0;
         margin-top: 10px;
     }
@@ -160,13 +173,69 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    .menu, 
+    .menu-list, 
      .contact__working-box,
      .header__line,
      .contact__telehone-icone
       {
         display: none;
     }
+    .menu__link-icone_big-mobile  {
+        display: none;
+    }
+    .menu__delimiter:nth-of-type(2) {
+        display: none;
+    }
+    .menu__delimiter:nth-child(n +3):nth-child(-n+12) {
+        display: block;
+    }
+    .menu__link-box:nth-child(9) {
+        display: flex;
+    }
+    .menu__link-box:nth-child(11) {
+        display: flex;
+    }
+  
+    .menu__delimiter {
+        height: 1px;
+        width: 100%;
+    }
+    
+    .menu-list {
+        position: relative;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+        margin-top: 32px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu_modal-active {
+        display: block;
+        margin-bottom: 260px;
+    }
+
+    .menu__modal-heading {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .menu__modal-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu__arrow {
+        transform: rotate(270deg);
+    }
+    .menu__close-modal-button {
+        border: none;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
    
     .header__connect-button {
         width: 106px;
