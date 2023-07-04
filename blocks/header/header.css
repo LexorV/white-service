@@ -18,6 +18,10 @@
     display: flex;
     gap: 40px;
 }
+.info-menu {
+    display: flex;
+    align-items: center;
+}
 .info-menu__list{ 
     display: flex;
     gap: 20px;
@@ -40,6 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    align-items: end;
 }
 .contact__dot {
     background: #56CB64;
@@ -64,6 +69,7 @@
     height: 18px;
 }
 .contact__telehone-text {
+    text-align: right;
     font-size: 26px;
     font-weight: 700;
     
@@ -121,7 +127,9 @@
     }
     .contact__telehone-text {
         font-size: 18px;
-
+    }
+    .contact__working-text  {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 850px)  {
@@ -129,8 +137,19 @@
         width: 20px;
         height: 20px;
     }
+    .menu__link-icone_big-mobile {
+        width: 26px;
+        height: 26px;
+    }
     .menu__link_disable {
         display: none;
+    }
+    .menu {
+        padding: 5px 0;
+        margin-top: 10px;
+    }
+    .header__logo {
+        max-width: 315px;
     }
 }
 @media screen and (max-width: 720px)  {
@@ -164,17 +183,25 @@
         border: none;
         width: 34px;
         height: 19px;
+        padding: 0;
         cursor: pointer;
     }
     
 }
 @media screen and (max-width: 600px)  {
+    .contact {
+        justify-content: center;
+    }
     .header__logo {
         max-width: 168px;
+        clip-path: polygon(0 0, 100% 0%, 100% 74%, 0 73%);
     }
     .contact__telehone-text {
         font-size: 16px;
         font-weight: 600;
+    }
+    .header__logo-box {
+        margin-top: 7px;
     }
 }
 

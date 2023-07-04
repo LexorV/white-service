@@ -1,25 +1,37 @@
 .specialists {
-    margin: 120px 0;
+    margin-top: 120px;
+    margin-bottom: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.specialists__delimiter {
+    width: 100%;
+    height: 40px;
+    display: none;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
 .specialists__heading {
-    max-width: 800px;
+    max-width: 1000px;
     font-size: 48px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 40px;
+    line-height: 100%;
 }
 
 .specialists__text {
     font-size: 26px;
+    margin-bottom: 80px;
 }
 
 .specialists__list {
     display: flex;
     position: relative;
     gap: 30px;
+    margin-bottom: 80px;
 }
 
 .specialists__item {
@@ -34,18 +46,22 @@
 
 .specialists__item-name {
     font-size: 26px;
+    padding-bottom: 16px;
     font-weight: 700;
     margin: 0;
 }
 
 .specialists__picture {
     border-radius: 50%;
+    margin-bottom: 40px;
 }
 
 .specialists__item-count-box {
     display: flex;
     gap: 10px;
+    margin-bottom: 38px;
 }
+
 .specialists__item-count-picture {
     width: 24px;
     height: 24px;
@@ -54,8 +70,10 @@
 .specialists__item-count-text {
     font-size: 16px;
 }
+
 .specialists__item-experience {
     font-size: 18px;
+    margin-bottom: 32px;
     text-align: center;
     min-height: 66px;
 }
@@ -69,12 +87,14 @@
     padding: 16px;
     box-sizing: border-box;
     display: flex;
+    z-index: 2;
     align-items: center;
 }
 
 .specialists__comment::after,
 .specialists__comment:before {
     content: '';
+    z-index: 1;
     position: absolute;
     background: #F6F6F6;
     border-radius: 3px;
@@ -99,7 +119,7 @@
 .specialists__slider-button {
     cursor: pointer;
     position: absolute;
-    top: 45%;
+    top: 37%;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -112,11 +132,11 @@
 }
 
 .specialists__slider-button_left {
-    left: -65px;
+    left: -35px;
 }
 
 .specialists__slider-button_right {
-    right: -65px;
+    right: -35px;
 }
 
 .specialists__pagination {
@@ -128,15 +148,18 @@
 .specialists__pagination-dot {
     width: 6px;
     height: 6px;
-    border-radius: 2px;
     background-color: black;
     cursor: pointer;
+}
+
+.specialists__pagination-dot:nth-child(n +3):nth-child(-n+4) {
+    display: none;
 }
 
 .specialists__pagination-dot_active {
     background-color: white;
     border: 3px solid black;
-    border-radius: 3px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 1700px) {
@@ -146,8 +169,15 @@
 }
 
 @media screen and (max-width: 1366px) {
+    .specialists {
+        margin-top: 240px;
+    }
     .specialists__heading {
         font-size: 42px;
+        max-width: 900px;
+    }
+    .specialists__delimiter {
+        display: block;
     }
     .specialists__text {
         font-size: 20px;
@@ -159,28 +189,39 @@
 }
 
 @media screen and (max-width: 1280px) {
+    .specialists {
+        margin-top: 180px;
+        margin-bottom: 80px;
+    }
     .specialists__heading {
         font-size: 36px;
+        margin-bottom: 32px;
+        max-width: 800px;
     }
     .specialists__text {
         font-size: 16px;
+        margin-bottom: 60px;
     }
     .specialists__item-name {
         font-size: 20px;
     }
     .specialists__item-count-text,
     .specialists__item-experience,
-    .specialists__comment  
-    {
+    .specialists__comment {
         font-size: 14px;
+    }
+    .specialists__item-experience {
+        max-width: 163px;
     }
     .specialists__item-count-text {
         max-width: 153px;
     }
-
+    .specialists__list {
+        margin-bottom: 60px;
+    }
     .specialists__item {
         max-width: 263px;
-    } 
+    }
     .specialists__slider-button {
         width: 56px;
         height: 56px;
@@ -192,24 +233,30 @@
         right: -35px;
     }
 }
+
 @media screen and (max-width: 970px) {
+    .specialists {
+        margin-top: 80px;
+    }
     .specialists__item {
         max-width: 197px;
         padding: 0;
-    } 
+    }
     .specialists__picture {
         max-width: 165px;
+        margin-bottom: 32px;
     }
-    .specialists__slider-button{
-        top: 35%;
+    .specialists__slider-button {
+        top: 30%;
     }
     .specialists__comment {
-        font-size: 14px;
-        padding: 14px, 10px;
+        font-size: 12px;
+        padding: 10px;
     }
     .specialists__item-count-box,
-    .specialists__comment  {
-        margin-top: 32px;
+    .specialists__comment {
+        margin-top: 24px;
+        margin-bottom: 0;
     }
     .specialists__item-count-picture {
         width: 16px;
@@ -217,6 +264,92 @@
     }
     .specialists__item-experience {
         max-width: 165px;
-        min-height: 90px;
+        min-height: 85px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .specialists {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .specialists__delimiter {
+        display: none;
+    }
+    .specialists__item {
+        max-width: 327px;
+    }
+    .specialists__picture {
+        max-width: 210px;
+        margin-bottom: 24px;
+    }
+    .specialists__heading {
+        font-size: 22px;
+        max-width: 327px;
+        margin-bottom: 24px;
+    }
+    .specialists__text {
+        font-size: 14px;
+        text-align: center;
+        max-width: 221px;
+        margin-bottom: 40px;
+    }
+    .specialists__comment {
+        margin-top: 24px;
+        padding: 15px 10px;
+    }
+    .specialists__item-name {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .specialists__item-experience {
+        min-height: auto;
+        max-width: 242px;
+    }
+    .specialists__item-count-text {
+        min-height: auto;
+        max-width: 202px;
+    }
+    .specialists__item-count-box {
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 0;
+        width: 242px;
+    }
+    .specialists__list {
+        margin-bottom: 40px;
+    }
+    .specialists__slider-button {
+        width: 47px;
+        height: 47px;
+        top: 32%;
+    }
+    .specialists__slider-button-icon {
+        width: 7px;
+    }
+    .specialists__pagination {
+        gap: 32px;
+    }
+    .specialists__item:nth-child(n +2) {
+        display: none;
+    }
+    .specialists__slider-button_left {
+        left: -30px;
+    }
+    .specialists__slider-button_right {
+        right: -30px;
+    }
+    .specialists__comment::after,
+    .specialists__comment:before {
+        top: -4px;
+    }
+    .specialists__pagination-dot:nth-child(n +3):nth-child(-n+4) {
+        display: block;
+    }
+    .specialists__pagination-dot {
+        width: 5px;
+        height: 5px;
     }
 }

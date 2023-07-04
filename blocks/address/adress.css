@@ -1,5 +1,4 @@
 .address {
-    margin-top: 120px;
     margin-bottom: 120px;
 }
 .address__list {
@@ -11,7 +10,7 @@
 }
 .address__item {
     width: calc(50% - 16px);
-    max-height: 448px;
+    max-height: 478px;
 }
 .address__picture {
     width: 100%;
@@ -22,10 +21,15 @@
     margin-bottom: 60px;
     font-size: 60px;
     font-weight: 800;
+    line-height: 100%;
 }
 .address__text {
     font-size: 20px;
     margin-bottom: 0;
+    line-height: 140%;
+}
+.address__text:first-of-type {
+    margin-bottom: 32px;
 }
 .address__button {
     border: 2px solid #000000;
@@ -48,7 +52,8 @@
         max-height: 537px;
     }
     .address__item:nth-child(n +3):nth-child(-n+4) {
-        max-height: 487px;
+        height: 487px;
+        max-width: 525px;
     }
     
     .address__text {
@@ -57,12 +62,18 @@
     .address__heading {
         font-size: 50px;
     }
+    .address__button {
+        max-width: 217px;
+        height: 50px;
+    }
 
 }
 @media screen and (max-width: 1100px)  {
     .address__list {
-        flex-flow: row wrap;
         gap: 28px;
+    }
+    .address__text:first-of-type {
+        margin-bottom: 24px;
     }
     .address__item:nth-child(2) {
        width: 100%;
@@ -74,17 +85,23 @@
       width: calc(32.7% - 14px);
       max-height: 191px;
     }
-
-}
-@media screen and (max-width: 870px)  {
     .address__text {
         font-size: 14px;
     } 
     .address__heading {
         font-size: 40px;
+        margin-bottom: 40px;
     }
     .address__button {
-        width: 188px;
+        max-width: 188px;
+        height: 50px;
+        font-size: 14px;
+        
+    }
+
+}
+@media screen and (max-width: 870px)  {
+    .address__button {
         font-size: 14px;
         height: 51px;
     }
@@ -94,6 +111,43 @@
       max-height: 141px;
       width: calc(32.1% - 14px);
     }
+}
+@media screen and (max-width: 550px)  {
+    .address {
+        margin-bottom: 80px;
+    }
+    .address__heading {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .address__button {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 24px;
+        margin-right: 0;
+        margin-top: 24px;
+        margin: 24px 0 0 0;
+    }
+    .address__list {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+    .address__item:nth-child(1n +3),
+    .address__item:nth-child(1){
+        min-width: 100%;
+        max-height: 234px;
+        overflow: hidden;
+    }
+    
+     .address__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
 }
+
 
