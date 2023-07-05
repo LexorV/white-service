@@ -1,0 +1,216 @@
+@media screen and (max-width: 1700px)  {
+ 
+}
+@media screen and (max-width: 1700px)  {
+    .main {
+        gap: 18px;
+        height: 817px;
+        padding: 0 0 0 143px;
+    }
+    .main__text {
+        font-size: 20px;
+    }
+    .main__heading {
+        padding-top: 80px;
+        font-size: 70px;
+        max-width: 679px;
+    }
+    .advantages__item:nth-of-type(4) {
+        max-width: 330px;
+    }
+    .advantages__item:nth-of-type(3),
+    .advantages__item:nth-of-type(1)
+     {
+        max-width: 320px;
+    }
+
+    .advantages__item-text {
+        font-size: 18px;
+    }
+    .btn-diagnostics {
+        min-width: 342px;
+    }
+    .btn-diagnostics__text {
+        font-size: 16px;
+    }
+    .main__right-block {
+        width: 43%;
+    }
+    .achievements {
+        right: 2%;
+    }
+}
+@media screen and (max-width: 1324px)  {
+    .advantages__item-text {
+        font-size: 14px;
+        line-height: 19,6;
+
+    }
+    .main {
+        height: 621px;
+        padding-bottom: 80px;
+    }
+    .main__text {
+        font-size: 16px;
+        max-width: 470px;
+        margin-bottom: 40px;
+        line-height: 100%;
+    }
+    
+    .main__heading  {
+        font-size: 50px;
+        margin-bottom: 40px;
+        line-height: 50px;
+        max-width: 331px;
+    }
+    .btn-diagnostics {
+        min-width: 290px;
+        max-height: 59px;
+        margin-bottom: 32px;
+    }
+    .advantages__item {
+        gap: 16px;
+        
+        max-width: 263px;
+    }
+    .advantages__item-text {
+        line-height: 140%;
+    }
+    .advantages__item-box-picture {
+        min-width: 50px;
+        height: 50px;
+    }
+    .achievements {
+        width: 298px;
+        gap: 6px;
+        height: 61px;
+    } 
+    .achievements__count { 
+        font-size: 28px;
+    }
+    .achievements__text  {
+        font-size: 14px;
+        width: 106px;
+    }
+    .achievements__smile {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .advantages__item:nth-of-type(4) {
+        max-width: 255px;
+    }
+    .advantages__item:nth-of-type(2) {
+        max-width: 247px;
+    }
+    .advantages__item:nth-of-type(3),
+    .advantages__item:nth-of-type(1)
+     {
+        max-width: 242px;
+    }
+    .advantages {
+        gap: 32px;
+    }
+    .advantages__item-picture {
+        width: 36px;
+        height: 36px;
+    }
+    .advantages__item  {
+        max-width: 242px;
+        gap: 16px;
+    }
+    .main {
+        gap: 12px;
+        padding: 0 0 0 87px;
+    }
+    .main__heading {
+        font-size: 50px;
+    }
+    .btn-diagnostics__text {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1001px) {
+
+    .advantages__item  {
+        max-width: 267px;
+        gap: 24px;
+    }
+    .advantages__item:nth-of-type(1),
+    .advantages__item:nth-of-type(2),
+    .advantages__item:nth-of-type(3) {
+        max-width: 267px;
+    }
+    .advantages__item:nth-of-type(4) {
+        max-width: 284px;
+    }
+    .main {
+        height: 775px;
+        padding-left: 59px;
+    }
+    .main__text {
+        max-width: 300px;
+        line-height: 120%;
+    }
+    .main__right-block {
+        width: 50%;
+        background-size: 155% 100%;
+        height: 100%;
+    }
+    .btn-diagnostics {
+        height: 50px;
+    }
+    .main__text-guarantee {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 720px) {
+    .main__heading  {
+        font-size: 26px;
+        line-height: 26px;
+        padding-top: 60px;
+        margin-bottom: 32px;
+    }
+    .main__text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 32px;
+    }
+    .btn-diagnostics {
+        width: 95%;
+    }
+    .main__right-block {
+        overflow: hidden;
+        height: 231px;
+        width: 40%;
+        background-size: cover;
+    }
+    .main {
+        padding-left: 24px;
+        height: 780px;
+    }
+    .advantages  {
+        gap: 24px;
+        justify-content: center;
+    }
+    .advantages__item:nth-of-type(1),
+    .advantages__item:nth-of-type(2),
+    .advantages__item:nth-of-type(3),
+    .advantages__item:nth-of-type(4)
+    {
+        max-width: 155.5px;
+    }
+    .advantages__item {
+        gap: 16px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .achievements {
+        position: static;
+        margin-top: 24px;
+        margin: 24px auto;
+    }
+    
+    
+
+}

@@ -6,4 +6,10 @@
 @import url('./blocks/main/main.css');
 @import url('./blocks/specialists/specialists.css');
 @import url('./blocks/address/adress.css');
-@import url('./blocks/color-blocks/color-blocks.css')
+@import url('./blocks/color-blocks/color-blocks.css');
+
+/* media*/
+@import url('./blocks/header/header-media.css');
+@import url('./blocks/main/main-media.css');
+@import url('./blocks/address/adress-media.css');
+@import url('./blocks/specialists/specialists-media.css');

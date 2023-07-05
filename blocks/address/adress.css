@@ -50,6 +50,7 @@
 @media screen and (max-width: 1850px)  {
     .address__item {
         max-height: 537px;
+        max-width: 525px;
     }
     .address__item:nth-child(n +3):nth-child(-n+4) {
         height: 487px;
@@ -77,6 +78,7 @@
     }
     .address__item:nth-child(2) {
        width: 100%;
+       max-width: 100%;
        order: -2;
     }
     .address__item:nth-child(1n +3),
@@ -100,54 +102,3 @@
     }
 
 }
-@media screen and (max-width: 870px)  {
-    .address__button {
-        font-size: 14px;
-        height: 51px;
-    }
-    .address__item:nth-child(1n +3),
-    .address__item:nth-child(1)
-     {
-      max-height: 141px;
-      width: calc(32.1% - 14px);
-    }
-}
-@media screen and (max-width: 550px)  {
-    .address {
-        margin-bottom: 80px;
-    }
-    .address__heading {
-        font-size: 26px;
-        text-align: center;
-        margin-bottom: 32px;
-    }
-    .address__button {
-        max-width: 100%;
-        width: 100%;
-        margin-bottom: 24px;
-        margin-right: 0;
-        margin-top: 24px;
-        margin: 24px 0 0 0;
-    }
-    .address__list {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-        gap: 24px;
-    }
-    .address__item:nth-child(1n +3),
-    .address__item:nth-child(1){
-        min-width: 100%;
-        max-height: 234px;
-        overflow: hidden;
-    }
-    
-     .address__picture {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-}
-
-
