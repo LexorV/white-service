@@ -1,0 +1,88 @@
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  }
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 , h3, h4, p {
+    margin: 0;
+}
+.root {
+    margin: auto auto;
+
+    max-width: 1920px;
+     
+}
+.specialists,
+.header__logo-box,
+.address,
+.menu
+{
+    margin: 0 200px;
+}
+
+@media screen and (max-width: 1700px)  {
+    .specialists,
+    .header__logo-box,
+    .address,
+    .menu {
+        margin: 0 143px;
+    }
+}
+@media screen and (max-width: 1200px)  {
+    .specialists,
+    .header__logo-box,
+    .address,
+    .menu {
+        margin: 0 87px;
+    }
+}
+@media screen and (max-width: 1000px)  {
+    .specialists,
+    .header__logo-box,
+    .address,
+    .menu {
+        margin: 0 59px;
+    }
+}
+@media screen and (max-width: 720px)  {
+    .specialists,
+    .header__logo-box,
+    .address,
+    .menu,
+    .header__mobile {
+        margin: 0 24px;
+    }
+}
+
+
+@media screen and (max-width: 1366px)  {
+    .root {
+        max-width: 1366px;
+    }
+}
+@media screen and (max-width: 1024px)  {
+    .root {
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width: 768px)  {
+    .root {
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width: 375px)  {
+    .root {
+        max-width: 375px;
+    }
+}
+

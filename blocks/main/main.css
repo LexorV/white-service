@@ -1,0 +1,149 @@
+.main {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+    padding: 0 0 0 200px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 90px;
+    height: 835px;
+    background-size: 30%;
+
+}
+
+.main__left-block {
+    width: 45%;
+}
+.main__right-block-img {
+    width:  100%;
+    height: 100%;
+}
+.main__right-block {
+    width: 48%;
+    background-repeat:no-repeat;
+    background-position: left;
+    background-size: cover;
+    float: right;
+    height: 100%;
+    background-image: url('../../images/main/technique.jpg');
+}
+.main__picture {
+    object-fit: contain;
+    float: right;
+    width: 40%;
+    height: 100%;
+}
+
+.main__heading {
+    font-size: 80px;
+    font-weight: 800;
+    padding-top: 120px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    line-height: 70px;
+
+}
+
+.main__text {
+    margin-bottom: 60px;
+    font-size: 26px;
+    max-width: 673px;
+    line-height: 120%ж
+}
+.main__delimiter {
+    position: relative;
+    z-index: 0;
+}
+
+.btn-diagnostics {
+    min-width: 412px;
+    height: 69px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 60px;
+    display: flex;
+    cursor: pointer;
+    gap: 15px;
+    position: relative;
+    box-shadow: 0px 8px 15px -5px #0000001A;
+    background: linear-gradient(to left, #FFCC00, #FFA300);
+}
+
+.btn-diagnostics__text {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+
+.btn-diagnostics__triangle {
+    position: absolute;
+    top: -7px;
+    left: 100px;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0px 8px 15px -5px #0000001A;
+    background: linear-gradient(#FFCC00, #FFA300);
+    border-top-left-radius: 3px;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    transform: rotate(45deg);
+}
+
+.advantages {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 394px;
+}
+.advantages__item-box-picture {
+    min-width: 70px;
+    border-radius: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7.156807899475098px 21.47042465209961px -4.2940850257873535px #23190426;
+}
+
+.advantages__item-text {
+    font-size: 20px;
+    line-height: 28px;
+}
+.advantages__item:nth-of-type(2) {
+    max-width: 304px;
+}
+
+
+.achievements {
+    height: 100px;
+    position: absolute;
+    bottom: 100px;
+    right: 10%;
+    display: flex;
+    background-color: white;
+    width: 464px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    box-shadow: 0px 10px 30px -6px rgba(35, 25, 4, 0.15);
+}
+.achievements__count {
+    font-weight: 700;
+    font-size: 50px;
+    background: linear-gradient(270deg, #FFCC00 0%, #FFA300 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.achievements__text {
+    font-size: 20px;
+    width: 151px;
+}

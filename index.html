@@ -1,16 +1,393 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Белый сервис</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Белый сервис</title>
+    </head>
 
-<body class="root">
+    <body class="root">
+        <header class="header">
+            <div class="header__logo-box">
+                <div class="header__left-block">
+                    <img class="header__logo" alt="Лого" src="./images/logo.jpg">
+                    <nav class="info-menu">
+                        <ul class="info-menu__list">
+                            <li class="info-menu__item">
+                                <a class="info-menu__link" href="#">
+                                    Контакты</a>
+                            </li>
+                            <li class="info-menu__item">
+                                <img alt="Каталог" src="./images/menu/icons/star.svg">
+                                <a class="info-menu__link" href="#">
+                                    Отзывы</a>
+                            </li>
+                            <li class="info-menu__item">
+                                <a class="info-menu__link" href="#">Гарантия</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="contact">
+                    <div class="contact__working-box">
+                        <div class="contact__dot"></div>
+                        <span class="contact__working-text">Звоните, пн-вс 10:00 - 20:00</span>
+                    </div>
+                    <div class="contact__telehone-box">
+                        <img
+                            class="contact__telehone-icone"
+                            alt="Телефон"
+                            src="./images/menu/icons/phone.svg">
+                        <a class="contact__telehone-text" href="tel:+73512207704">+7 351 220 77 04</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile">
+                <button type="button" class="header__burger-menu">
+                    <img
+                        class="header__burger-menu-icon"
+                        src="./images/menu/icons/burger-menu.svg"
+                        alt="Бургер меню">
+                </button>
+                <button class="header__connect-button">Связаться</button>
+            </div>
+            <hr class="header__line">
+            <nav class="menu">
+                <div class="menu__modal-header">
+                    <h3 class="menu__modal-heading">Меню</h3>
+                    <button type="button" class="menu__close-modal-button">
+                        <img src="./images/menu/icons/close.svg" class="menu__close-icon">
+                    </button>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu__link-box">
+                        <a class="menu__link" href="#">
+                            <img
+                                class="menu__link-icone menu__link-icone_big-mobile"
+                                alt="Каталог"
+                                src="./images/menu/icons/catalog.svg">
+                            <span class="menu__link-text menu__link_disable">Главная</span>
+                        </a>
+                    </li>
+                    <li class="menu__delimiter"></li>
+                    <li class="menu__link-box">
+                        <a class="menu__link" href="#">
+                            <img class="menu__link-icone" alt="Каталог" src="./images/menu/icons/apple.svg">
+                            <span class="menu__link-text">
+                                Ремонт Apple
+                            </span>
+                        </a>
+                        <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                    <li class="menu__delimiter"></li>
+                    <li class="menu__link-box">
+                        <a class="menu__link" href="#">
+                            <img
+                                class="menu__link-icone"
+                                alt="Каталог"
+                                src="./images/menu/icons/smartphone.svg">
+                            <span class="menu__link-text">
+                                Ремонт смартфонов
+                            </span>
+                        </a>
+                        <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                    <li class="menu__delimiter"></li>
+                    <li class="menu__link-box">
+                        <a class="menu__link" href="#">
+                            <img
+                                class="menu__link-icone"
+                                alt="Каталог"
+                                src="./images/menu/icons/smartphone.svg">
+                            <span class="menu__link-text">
+                                Ремонт планшетов
+                            </span>
+                        </a>
+                        <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                    <li class="menu__delimiter"></li>
+                    <li class="menu__link-box">
+                        <a class="menu__link" href="#">
+                            <img
+                                class="menu__link-icone"
+                                alt="Каталог"
+                                src="./images/menu/icons/laptop.svg">
+                            <span class="menu__link-text">
+                                Ремонт ноутбуков
+                            </span>
+                        </a>
+                        <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                    <li class="menu__delimiter"></li>
 
-</body>
+                    <li class="menu__link-box">
+                        <a class="menu__link" href="#">
+                            <img class="menu__link-icone" alt="Каталог" src="./images/menu/icons/game.svg">
+                            <span class="menu__link-text">
+                                Ремонт игровых приставок
+                            </span>
+                        </a>
+                        <img class="menu__arrow" src="./images/menu/icons/arrow_down.svg" alt="открыть"></li>
+                    <li class="menu__delimiter"></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__right-block"></div>
+            <h1 class="main__heading">Сервисный центр</h1>
+            <p class="main__text">Ремонт планшетов в Челябинске. Бесплатно продиагностируем
+                и быстро починим любую поломку.
+                <span class="main__text-guarantee">Гарантия 3 месяца</span>
+            </p>
+            <button class="btn-diagnostics" type="button">
+                <span class="btn-diagnostics__triangle"></span>
+                <img
+                    class="btn-diagnostics__arrow"
+                    alt="стрелка вправо"
+                    src="./images/main/arrow_right.svg">
+                <span class="btn-diagnostics__text">Записаться на диагностику</span>
+            </button>
+            <ul class="advantages">
+                <li class="advantages__item">
+                    <div class="advantages__item-box-picture">
+                        <img
+                            class="advantages__item-picture"
+                            alt="Ремонт"
+                            src="./images/main/screwdriver.jpg">
+                    </div>
+                    <span class="advantages__item-text">
+                        Починим даже то, от чего отказались другие
+                    </span>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-box-picture">
+                        <img class="advantages__item-picture" alt="Щит" src="./images/main/shield.jpg">
+                    </div>
+                    <span class="advantages__item-text">
+                        Гарантия нашего сервиса 3 месяца
+                    </span>
+                </li>
 
-</html>
+                <li class="advantages__item">
+                    <div class="advantages__item-box-picture">
+                        <img class="advantages__item-picture" alt="Бонус" src="./images/main/bonus.jpg">
+                    </div>
+                    <span class="advantages__item-text">
+                        Собственная выгодная бонусная система
+                    </span>
+                </li>
+
+                <li class="advantages__item">
+                    <div class="advantages__item-box-picture">
+                        <img
+                            class="advantages__item-picture"
+                            alt="поиск"
+                            src="./images/main/search.jpg">
+                    </div>
+                    <span class="advantages__item-text">
+                        Бесплатная диагностика даже при отказе от ремонта
+                    </span>
+                </li>
+            </ul>
+            <div class="achievements">
+                <span class="achievements__count">12 585</span>
+                <img
+                    class="achievements__smile"
+                    alt="Улыбка"
+                    src="./images/main/wink_smile.jpg">
+                <span class="achievements__text">Выполненных ремонтов</span>
+            </div>
+
+        </main>
+        <div class="specialists__delimiter"></div>
+        <section class="specialists">
+            <h2 class="specialists__heading">
+                Ремонт осуществляется первоклассными специалистами
+            </h2>
+            <p class="specialists__text">Средний опыт работы наших мастеров 4 года</p>
+            <div class="specialists__slider-box">
+                <button
+                    class="specialists__slider-button
+            specialists__slider-button_left
+            ">
+                    <img
+                        class="specialists__slider-button-icon"
+                        alt="Листать влево"
+                        src="./images/specialists/svg/slider_icon_left.svg"></button>
+                <ul class="specialists__list">
+                    <li class="specialists__item">
+                        <img
+                            class="specialists__picture"
+                            alt="Наш специалист"
+                            src="./images/specialists/specialists_1.jpg">
+                        <h3 class="specialists__item-name">Илья</h3>
+                        <p class="specialists__item-experience">Мастер по ремонту, опыт 5 лет. В «Белом Сервисе» с июля 2020</p>
+                        <div class="specialists__item-count-box">
+                            <img
+                                class="specialists__item-count-picture"
+                                alt="ваш выбор"
+                                src="./images/specialists/choice_icon.jpg">
+                            <span class="specialists__item-count-text">
+                                Более 4 800 выполненных работ</span>
+                        </div>
+                        <span class="specialists__comment">
+                            Определю любую причину поломки!
+                        </span>
+                    </li>
+
+                    <li class="specialists__item">
+                        <img
+                            class="specialists__picture"
+                            alt="Наш специалист"
+                            src="./images/specialists/specialists_2.jpg">
+                        <h3 class="specialists__item-name">Александр</h3>
+                        <p class="specialists__item-experience">
+                            Мастер по ремонту, опыт 4,5 года. В «Белом Сервисе» с августа 2020
+                        </p>
+                        <div class="specialists__item-count-box">
+                            <img
+                                class="specialists__item-count-picture"
+                                alt="ваш выбор"
+                                src="./images/specialists/choice_icon.jpg">
+                            <span class="specialists__item-count-text">
+                                Более 5 200 выполненных работ</span>
+                        </div>
+                        <span class="specialists__comment">
+                            Верну к жизни, как самые первые модели, так и новинки смартфонов.
+                        </span>
+                    </li>
+                    <li class="specialists__item">
+                        <img
+                            class="specialists__picture"
+                            alt="Наш специалист"
+                            src="./images/specialists/specialists_3.jpg">
+                        <h3 class="specialists__item-name">Андрей</h3>
+                        <p class="specialists__item-experience">Мастер по ремонту и переклейке дисплеев,
+                            опыт 5 лет. В «Белом Сервисе» с сентября 2020</p>
+                        <p>
+                            <div class="specialists__item-count-box">
+                                <img
+                                    class="specialists__item-count-picture"
+                                    alt="ваш выбор"
+                                    src="./images/specialists/choice_icon.jpg">
+                                <span class="specialists__item-count-text">
+                                    Более 4 800 выполненных работ</span>
+                            </div>
+                            <span class="specialists__comment">
+                                Ремонт Apple – мой конек!
+                            </span>
+                        </li>
+                        <li class="specialists__item">
+                            <img
+                                class="specialists__picture"
+                                alt="Наш специалист"
+                                src="./images/specialists/specialists_4.jpg">
+                            <h3 class="specialists__item-name">Дмитрий</h3>
+                            <p class="specialists__item-experience">Мастер по ремонту, опыт 5 лет. &nbsp;&nbsp;&nbsp; В «Белом Сервисе» с июля 2020</p>
+                            <div class="specialists__item-count-box">
+                                <img
+                                    class="specialists__item-count-picture"
+                                    alt="ваш выбор"
+                                    src="./images/specialists/choice_icon.jpg">
+                                <span class="specialists__item-count-text">
+                                    Более 4 800 выполненных работ</span>
+                            </div>
+                            <span class="specialists__comment">
+                                Мы даем гарантию и исполняем ее. На технику – это всегда год.
+                            </span>
+                        </li>
+                    </ul>
+                    <button
+                        class="specialists__slider-button
+            specialists__slider-button_right
+            ">
+                        <img
+                            class="specialists__slider-button-icon"
+                            alt="Листать вправо"
+                            src="./images/specialists/svg/slider_icon_right.svg"></button>
+                </div>
+                <ul class="specialists__pagination">
+
+                    <li
+                        class="specialists__pagination-dot
+                specialists__pagination-dot_active"></li>
+
+                    <li class="specialists__pagination-dot"></li>
+
+                    <li class="specialists__pagination-dot"></li>
+
+                    <li class="specialists__pagination-dot"></li>
+
+                    <li class="specialists__pagination-dot"></li>
+                </ul>
+            </section>
+            <section class="address">
+                <ul class="address__list">
+                    <li class="address__item">
+                        <img
+                            class="address__picture"
+                            src="./images/address/photo_address_1.jpg"
+                            alt="Наш адрес">
+                    </li>
+                    <li class="address__item">
+                        <h2 class="address__heading">Сервисные центры</h2>
+                        <p class="address__text">Первый сервисный центр Белый Сервис распахнул свои
+                            двери 28 марта 2012 года по адресу г. Челябинск, ул. Энгельса 75.
+                        </p>
+                        <p class="address__text">На текущий момент «Белый Сервис» имеет три филиала со
+                            своими приемщиками и мастерами. Гибко распределяем рабочую нагрузку: если
+                            персонал на одной из точек перегружен заказами, то часть работ передается их
+                            менее загруженным коллегам из другого филиала.
+                        </p>
+                        <button type="button" class="address__button">
+                            Показать адреса
+                        </button>
+                    </li>
+                    <li class="address__item">
+                        <img
+                            class="address__picture"
+                            src="./images/address/photo_address_2.jpg"
+                            alt="Наш адрес">
+                    </li>
+
+                    <li class="address__item">
+                        <img
+                            class="address__picture"
+                            src="./images/address/photo_address_3.jpg"
+                            alt="Наш адрес">
+                    </li>
+                </ul>
+            </section>
+            <section class="color-blocks">
+                <div class="color-blocks-list">
+                    <div class="color-blocks-item">Восстановление техники проводится в специальных
+                        помещениях с использованием профессионального оборудования и стендов для
+                        сборки/разборки девайсов. Это позволяет выполнять ремонт в разы быстрее.
+                        Следующий этап включает в себя финальное тестирование техники и возврат ее
+                        владельцу. Мы в «Белом Сервисе» стремимся обеспечивать наивысший уровень
+                        качества и поэтому вместе с работоспособной техникой пользователь получает
+                        трехмесячную гарантию на все произведенные нами ремонты.</div>
+                    <div class="color-blocks-item">
+                        На текущий момент «Белый Сервис» имеет три филиала со своими приемщиками и
+                        мастерами. Гибко распределяем рабочую нагрузку: если персонал на одной из точек
+                        перегружен заказами, то часть работ передается их менее загруженным коллегам из
+                        другого филиала. На текущий момент «Белый Сервис» имеет три филиала со своими
+                        приемщиками и мастерами. Гибко распределяем рабочую нагрузку: если персонал на
+                        одной из точек перегружен заказами, то часть работ передается их менее
+                        загруженным коллегам из другого филиала.
+                    </div>
+                    <div class="color-blocks-item">
+                        Некоторые мастера «Белого Сервиса» разбирали своими руками
+                         еще самый первый
+                        айфон, а теперь наработанный 
+                        опыт позволяет им чинить сложнейшие в плане
+                        конструкции iPad Pro и iPhone 11.
+                    </div>
+         
+                    
+
+                </div>
+
+            </section>
+        </body>
+
+    </html>

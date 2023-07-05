@@ -1,0 +1,149 @@
+@media screen and (max-width: 1366px)  {
+    .info-menu {
+        display: none;
+       
+    }
+    .menu__delimiter:nth-child(n +3):nth-child(-n+10) {
+        display: none;
+    }
+    .menu__link-box {
+        font-size: 14px;;
+    }
+}
+@media screen and (max-width: 1140px)  {
+    .menu__link-box:nth-child(9) {
+        display: none;
+    }
+    .contact__telehone-text {
+        font-size: 18px;
+    }
+    .contact__working-text  {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 850px)  {
+    .menu__link-icone {
+        width: 20px;
+        height: 20px;
+    }
+    .menu__link-icone_big-mobile {
+        width: 26px;
+        height: 26px;
+    }
+    .menu__link_disable {
+        display: none;
+    }
+    .menu-list {
+        padding: 5px 0;
+        margin-top: 10px;
+    }
+    .header__logo {
+        max-width: 315px;
+    }
+}
+@media screen and (max-width: 720px)  {
+    .header__mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .menu-list, 
+     .contact__working-box,
+     .header__line,
+     .contact__telehone-icone
+      {
+        display: none;
+    }
+    .menu__link-icone_big-mobile  {
+        display: none;
+    }
+    .menu__delimiter:nth-of-type(2) {
+        display: none;
+    }
+    .menu__delimiter:nth-child(n +3):nth-child(-n+12) {
+        display: block;
+    }
+    .menu__link-box:nth-child(9) {
+        display: flex;
+    }
+    .menu__link-box:nth-child(11) {
+        display: flex;
+    }
+  
+    .menu__delimiter {
+        height: 1px;
+        width: 100%;
+    }
+    
+    .menu-list {
+        position: relative;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+        margin-top: 32px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu_modal-active {
+        display: block;
+        margin-bottom: 260px;
+    }
+
+    .menu__modal-heading {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .menu__modal-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu__arrow {
+        transform: rotate(270deg);
+    }
+    .menu__close-modal-button {
+        border: none;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    } 
+    .header__connect-button {
+        width: 106px;
+        height: 32px;
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 14px;
+        color: white;
+        background: linear-gradient(#FFCC00, #FFA300)
+    }
+    .header__burger-menu {
+        background-color: transparent;
+        border: none;
+        width: 34px;
+        height: 19px;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+}
+@media screen and (max-width: 600px)  {
+    .contact {
+        justify-content: center;
+    }
+    .contact__telehone-text {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .header__logo {
+        max-width: 168px;
+        clip-path: polygon(0 0, 100% 0%, 100% 74%, 0 73%);
+    }
+    .header__logo-box {
+        margin-top: 7px;
+    }
+}
